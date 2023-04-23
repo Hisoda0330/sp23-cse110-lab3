@@ -1,0 +1,85 @@
+h3{
+    text-decoration: underline;
+}
+body{
+    background-color: #E5D4ED; /*change html background page to light pink color */
+}
+.Content{
+    text-align: center;
+}
+.title{
+    font-size: 50px;
+    background-color: yellow;
+    position: relative;
+    left: 550px;
+
+}
+.date{
+    position: absolute;
+    top: 50px;
+    left: 1200px;
+    color: red;
+}
+.myname{
+    border-style: dashed;
+    border-color: darkgray;
+    border-radius: 10%;
+    border-width: .4ex;
+    color: hsl(192, 7%, 14%,1);
+}
+img{
+    /* long hand */
+    border:3px dashed orange;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2ch;
+    padding-left: 2ch;
+    /* short hand*/
+    padding: 1em 2ch 1em;
+    text-align: center;
+}
+ul{
+    color: rgb(222, 115, 38);
+}
+footer{
+    /* long hand */
+    margin-top: 5mm;
+    margin-bottom: 1cm;
+    margin-left: 0cm;
+    margin-right: 1cm;
+    /* short hand*/
+    margin: 5mm 1cm 1cm 0cm;
+}
+button{
+    margin: 0ch 0ch 1Q 80pc;
+}
+button:active{
+    font-weight: 700;
+    color: green;
+}
+[data-tooltip]{
+    position:relative;
+}
+[data-tooltip]:hover:after{
+    content: "click_to_save";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 1px;
+    padding: 5px;
+
+}
+.hide{
+    display: none;
+}
+.newline{
+    display: block;
+}
+hr{
+    margin-top: 5mm;
+}
+#copyright{
+    position: absolute;
+    bottom: -4cm;
+}

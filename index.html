@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,26 @@
 </head>
 <body>
     <main>
-        <h1>First meeting</h1>
-        <h3 id="date">Date</h3>
-        <span>May 23, 2022</span>
+        <h1><span class="title">First meeting</span></h1>
+        <h3><span class="date">Date: May 23, 2022</span></h3>
         <h3 id="attendance">Attendance list</h3>
         <ul>
-            <li><input type="checkbox"/> Jinpeng Huang</li>
+            <li><input type="checkbox"/> <span class="myname">Jinpeng Huang</span></li>
             <li><input type="checkbox"/> Botao Zhang</li>
             <li><input type="checkbox"/> Johnson Li</li>
             <li><input type="checkbox"/> Jiajia Li</li>
             <li><input type="checkbox"/> Annie Liu</li>
         </ul>
-        <h3 id="Content_photo">Content photo</h3>
-        <img 
-            src="https://i.ibb.co/9T9stc1/Wechat-IMG143.jpg" 
-            alt="dachshund"
-            width="250"
-        />
+        <h3 class="Content">Content photo</h3>
+        <div class="Content">
+            <img 
+                src="https://i.ibb.co/9T9stc1/Wechat-IMG143.jpg" 
+                alt="dachshund"
+             width="250"
+            />
+        </div>
         <h3>Characteristic</h3>
-        <ul>
+        <ul class>
             <li>Good with Children</li>
             <li>Good with other dogs</li>
             <li>Barks often</li>
@@ -38,9 +40,9 @@
                 <i>Summary of the breed</i>
             </summary>
             <p>
-                The dog breed dachshund is good with children and other dogs, but it likes to bark 
-                beucase they are highly alerted. 
-                Dachshunds also like to be around with humans and they have a high intelligence
+                The dog breed dachshund is good with children and other dogs, but it likes to bark<span class="hide"> beucase they are highly alerted</span>. 
+                <span class="newline">Dachshunds also like to be around with humans and they have a high intelligence.</span>
+                
             </p>
         </details>
     </main>
@@ -48,9 +50,9 @@
     <hr />
     <footer>
         <form onsubmit="alert('note have been save')">
-            <button>Save</button>
+            <button data-tooltip="click_note_progress">Save</button>
         </form>
-        <div>&copy; CSE110spring2023teamxx.com</div>
+        <div id="copyright">&copy; CSE110spring2023teamxx.com</div>
 
     </footer>
 </body>
