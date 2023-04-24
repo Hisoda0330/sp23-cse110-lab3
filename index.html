@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <style>
+        /* media page color based on the screen width */
+        @media screen and (min-width:500px){
+            body{
+                background-color: #E5D4ED;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -14,13 +25,14 @@
         <h3 id="attendance">Attendance list</h3>
         <ul>
             <li><input type="checkbox"/> <span class="myname">Jinpeng Huang</span></li>
-            <li><input type="checkbox"/> Botao Zhang</li>
-            <li><input type="checkbox"/> Johnson Li</li>
+                <ul id="me">This is me</ul>
+            <li class="friend"><input type="checkbox"/> Botao Zhang</li>
+            <li class="friend"><input type="checkbox"/> Johnson Li</li>
             <li><input type="checkbox"/> Jiajia Li</li>
-            <li><input type="checkbox"/> Annie Liu</li>
+            <li class="groupmate"><input type="checkbox"/> Annie Liu</li>
         </ul>
         <h3 class="Content">Content photo</h3>
-        <div class="Content">
+        <div class="Content_photo">
             <img 
                 src="https://i.ibb.co/9T9stc1/Wechat-IMG143.jpg" 
                 alt="dachshund"
@@ -35,6 +47,11 @@
             <li>Likes social with human</li>
             <li>High intelligence</li>      
         </ul>
+        <div class="container">
+            <div class="pro">Pros</div>
+            <div class="con">Cons</div>
+            <div class="sidenote">Side Note</div>
+        </div>
         <details>
             <summary>
                 <i>Summary of the breed</i>
